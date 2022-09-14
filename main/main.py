@@ -17,6 +17,8 @@ driver.get("https://typings.gg/")
 
 redo = driver.find_element(By.ID, "redo-button")
 
+
+
 # Calculate Words Per Min
 # 50 words in 15/60 seconds = 200 WPM
 # if theres 50 words total, I need to take up a total of 15 seconds.
@@ -56,6 +58,12 @@ def autoType(WPM, typingTime = 0): #Type up to 400 WPM automatically.
     Total Characters: {totalCharacters}
     Time Per Character: {timePerCharacter}
     ''')
+
+
+    rightWing = driver.find_element(By.ID, "right-wing")
+    results = rightWing.text.split()
+    resultWPM = results[1]
+    print(resultWPM)
     return timePerCharacter
 
 

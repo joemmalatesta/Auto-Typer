@@ -1,29 +1,5 @@
-Elapsed: 13.319770097732544
-        Total Characters: 260
-        Time Per Character: 0.051229884991279014Elapsed: 14.42813777923584
-        Total Characters: 257
-        Time Per Character: 0.0561406139269877Elapsed: 10.91282844543457
-    Total Characters: 254
-    Time Per Character: 0.04296389151745894
-    Elapsed: 13.510340690612793
+Elapsed: 15.074873924255371
     Total Characters: 253
-    Time Per Character: 0.05340055608937863
-    Elapsed: 13.594463586807251
-    Total Characters: 263
-    Time Per Character: 0.051689975615236694
-    Elapsed: 16.335278272628784
-    Total Characters: 257
-    Time Per Character: 0.06356139405692134
-    Elapsed: 12.181922912597656
-    Total Characters: 252
-    Time Per Character: 0.048340963938879586
-    Elapsed: 12.989369869232178
-    Total Characters: 254
-    Time Per Character: 0.051139251453669994
-    Elapsed: 14.189003467559814
-    Total Characters: 279
-    Time Per Character: 0.05085664325290256
-    Elapsed: 19.69523596763611
-    Total Characters: 252
-    Time Per Character: 0.07815569828427027
+    Time Per Character: 0.05958448191405285
+    Current WPM : 202
     
