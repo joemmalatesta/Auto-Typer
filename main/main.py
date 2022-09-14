@@ -9,10 +9,13 @@ from selenium.webdriver.common.keys import Keys
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://typings.gg/")
-paragrpah = driver.find_element(By.ID, "text-display")
+# paragrpah = driver.find_element(By.ID, "text-display")
 
-words = (paragrpah.text.split())
-inputField = driver.find_element(By.ID, "input-field")
+# words = (paragrpah.text.split())
+# inputField = driver.find_element(By.ID, "input-field")
+
+
+redo = driver.find_element(By.ID, "redo-button")
 
 # Calculate Words Per Min
 # 50 words in 15/60 seconds = 200 WPM
@@ -22,24 +25,30 @@ inputField = driver.find_element(By.ID, "input-field")
 
 
 def autoType(WPM): #Type up to 400 WPM automatically.
+    paragrpah = driver.find_element(By.ID, "text-display")
+    words = (paragrpah.text.split())
+    inputField = driver.find_element(By.ID, "input-field")
     start = time.time()
-    if WPM > 400:
-        print("I can only run up to 400 WPM...")
-        return
+    # if WPM > 400:
+    #     print("I can only run up to 400 WPM...")
+    #     return
     for word in words:
-        # inputField.send_keys(word)
         for letter in word:
-            start2 = time.time()
+            # start2 = time.time()
             inputField.send_keys(letter)
             time.sleep(.015) #Constant
-            end2 = time.time()
-            elapsed2 = end2-start2
-            print(elapsed2)
+            # end2 = time.time()
+            # elapsed2 = end2-start2
+            # print(elapsed2)
         # time.sleep(math.calculateTime(WPM))
         inputField.send_keys(" ")
     end = time.time()
     elapsed = end-start
     print(elapsed)
+
+
+autoType(100) #First one calibrates how long each character takes.
+redo.click()
 autoType(100)
 time.sleep(5)
 driver.quit()
