@@ -5,10 +5,12 @@
 # if WPM = 200, then 3000/X = 200 and X would be the seconds it's supposed to take
 
 
-rawTimes = (7.873501539230347, 7.330883264541626, 7.1836981773376465)
+
 #Since adding time between each letter input, you can see that each character matters a lot towards the timing
 #Need to figure out how much time I need for each Character.
 #Time to type each character is about .031 with .005 margin of error.
+
+
 
 def calculateTime(WPM):
     return "hey "

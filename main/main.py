@@ -23,32 +23,45 @@ redo = driver.find_element(By.ID, "redo-button")
 # 15/50 = .3 so I need .3 second break between to get 200 WPS
 #Average to complete without any help is about .93s. Take that and divide it by 50 and subtract that from the sleep time
 
+def autoType(WPM, typingTime = 0): #Type up to 400 WPM automatically.
+    totalCharacters = 0
 
-def autoType(WPM): #Type up to 400 WPM automatically.
+
     paragrpah = driver.find_element(By.ID, "text-display")
     words = (paragrpah.text.split())
     inputField = driver.find_element(By.ID, "input-field")
+
+
     start = time.time()
-    # if WPM > 400:
-    #     print("I can only run up to 400 WPM...")
-    #     return
     for word in words:
         for letter in word:
-            # start2 = time.time()
             inputField.send_keys(letter)
-            time.sleep(.015) #Constant
-            # end2 = time.time()
-            # elapsed2 = end2-start2
-            # print(elapsed2)
+            totalCharacters += 1
+            letterSleep = .015
+            if typingTime != 0:
+                letterSleep = typingTime - .015
+            time.sleep(letterSleep)
+
         # time.sleep(math.calculateTime(WPM))
         inputField.send_keys(" ")
+        totalCharacters += 1
     end = time.time()
     elapsed = end-start
-    print(elapsed)
+    totalCharacters -= 1 #Last space is not required.
+    timePerCharacter = elapsed/totalCharacters
+
+    #Add elapsed, total characters, and time per character
+    with open('timesheet.txt', 'a') as f:
+        f.write(f'''Elapsed: {elapsed}
+    Total Characters: {totalCharacters}
+    Time Per Character: {timePerCharacter}
+    ''')
+    return timePerCharacter
 
 
-autoType(100) #First one calibrates how long each character takes.
+typingTime = autoType(100) #First one calibrates how long each character takes.
 redo.click()
-autoType(100)
+autoType(100, typingTime)
+#Turns out there is still a huge disparity of character typed per second, at least on my laptop.
 time.sleep(5)
 driver.quit()
