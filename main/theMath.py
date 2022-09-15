@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+from collections import Counter
+
 #Okay im splitting up the math portion here so It don't get so confusing...
 #For this, I will always be using 50 words, but it should be able to transfer no matter how many words there are.
 #  50 words /  (X/60) = WPM
@@ -21,3 +24,17 @@ def calculateTime(WPM):
     print(f"current wait time: {wordWaitTime}")
     return wordWaitTime
     #you can use (wordWaitTime / letterCount) - timePerCharacter
+
+def graph(points):
+    occuranceCount = Counter(points)
+    height = (occuranceCount.most_common(1)[0][1])
+
+        
+    plt.ylabel("Occurance")
+    plt.xlabel("WPM")
+    plt.hist(points, bins=len(points))
+    plt.show()
+
+
+
+

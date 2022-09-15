@@ -89,11 +89,16 @@ print(resultWPM)
 
 
 #Run until you get it right
+graphPoints = []
 while resultWPM != expectedWPM:
     redo.click()
     resultWPM = autoType(wordSleep)[0]
+    graphPoints.append(resultWPM)
     print(f'This run: {resultWPM}, Expected : {expectedWPM}, Difference : {abs(expectedWPM - resultWPM)}, Current sleep time: {wordSleep}')
     timesRan += 1
 
-time.sleep(5)
+
 print(f"holy hell, it worked. it took you {timesRan - 11} runs to calibrate your stinky machine. The wait time between each word was {wordSleep}.")
+time.sleep(5)
+driver.quit()
+theMath.graph(graphPoints)
