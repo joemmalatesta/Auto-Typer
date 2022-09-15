@@ -1,0 +1,331 @@
+Elapsed: 3.926835775375366
+    Words: 50
+    Time Per Word: 0.07853671550750732
+    Current WPM : 804
+    Run # : 0
+    Elapsed: 3.953866481781006
+    Words: 50
+    Time Per Word: 0.07907732963562011
+    Current WPM : 844
+    Run # : 1
+    Elapsed: 3.9694244861602783
+    Words: 50
+    Time Per Word: 0.07938848972320557
+    Current WPM : 804
+    Run # : 2
+    Elapsed: 3.890216827392578
+    Words: 50
+    Time Per Word: 0.07780433654785156
+    Current WPM : 824
+    Run # : 3
+    Elapsed: 3.8892719745635986
+    Words: 50
+    Time Per Word: 0.07778543949127198
+    Current WPM : 821
+    Run # : 4
+    Elapsed: 3.904254198074341
+    Words: 50
+    Time Per Word: 0.07808508396148682
+    Current WPM : 803
+    Run # : 5
+    Elapsed: 3.891878366470337
+    Words: 50
+    Time Per Word: 0.07783756732940673
+    Current WPM : 829
+    Run # : 6
+    Elapsed: 3.8734118938446045
+    Words: 50
+    Time Per Word: 0.0774682378768921
+    Current WPM : 824
+    Run # : 7
+    Elapsed: 3.871401786804199
+    Words: 50
+    Time Per Word: 0.07742803573608398
+    Current WPM : 819
+    Run # : 8
+    Elapsed: 3.8906633853912354
+    Words: 50
+    Time Per Word: 0.07781326770782471
+    Current WPM : 776
+    Run # : 9
+    Elapsed: 3.866856575012207
+    Words: 50
+    Time Per Word: 0.07733713150024414
+    Current WPM : 832
+    Run # : 10
+    Elapsed: 3.8738887310028076
+    Words: 50
+    Time Per Word: 0.07747777462005616
+    Current WPM : 815
+    Run # : 11
+    Elapsed: 3.8729567527770996
+    Words: 50
+    Time Per Word: 0.07745913505554199
+    Current WPM : 797
+    Run # : 12
+    Elapsed: 3.8769876956939697
+    Words: 50
+    Time Per Word: 0.07753975391387939
+    Current WPM : 878
+    Run # : 13
+    Elapsed: 3.9035215377807617
+    Words: 50
+    Time Per Word: 0.07807043075561523
+    Current WPM : 831
+    Run # : 14
+    Elapsed: 3.889875888824463
+    Words: 50
+    Time Per Word: 0.07779751777648926
+    Current WPM : 796
+    Run # : 15
+    Elapsed: 3.872530221939087
+    Words: 50
+    Time Per Word: 0.07745060443878174
+    Current WPM : 825
+    Run # : 16
+    Elapsed: 3.887903928756714
+    Words: 50
+    Time Per Word: 0.07775807857513428
+    Current WPM : 834
+    Run # : 17
+    Elapsed: 3.8895492553710938
+    Words: 50
+    Time Per Word: 0.07779098510742187
+    Current WPM : 764
+    Run # : 18
+    Elapsed: 3.867159605026245
+    Words: 50
+    Time Per Word: 0.0773431921005249
+    Current WPM : 835
+    Run # : 19
+    Elapsed: 3.8699893951416016
+    Words: 50
+    Time Per Word: 0.07739978790283203
+    Current WPM : 819
+    Run # : 20
+    Elapsed: 3.8725407123565674
+    Words: 50
+    Time Per Word: 0.07745081424713135
+    Current WPM : 784
+    Run # : 21
+    Elapsed: 3.8681814670562744
+    Words: 50
+    Time Per Word: 0.07736362934112549
+    Current WPM : 829
+    Run # : 22
+    Elapsed: 3.90195894241333
+    Words: 50
+    Time Per Word: 0.0780391788482666
+    Current WPM : 799
+    Run # : 23
+    Elapsed: 3.8663055896759033
+    Words: 50
+    Time Per Word: 0.07732611179351806
+    Current WPM : 848
+    Run # : 24
+    Elapsed: 3.8685336112976074
+    Words: 50
+    Time Per Word: 0.07737067222595215
+    Current WPM : 804
+    Run # : 25
+    Elapsed: 3.8709800243377686
+    Words: 50
+    Time Per Word: 0.07741960048675538
+    Current WPM : 835
+    Run # : 26
+    Elapsed: 3.8749046325683594
+    Words: 50
+    Time Per Word: 0.07749809265136719
+    Current WPM : 827
+    Run # : 27
+    Elapsed: 3.870708703994751
+    Words: 50
+    Time Per Word: 0.07741417407989502
+    Current WPM : 904
+    Run # : 28
+    Elapsed: 3.8677632808685303
+    Words: 50
+    Time Per Word: 0.0773552656173706
+    Current WPM : 791
+    Run # : 29
+    Elapsed: 3.8776214122772217
+    Words: 50
+    Time Per Word: 0.07755242824554444
+    Current WPM : 856
+    Run # : 30
+    Elapsed: 3.877357244491577
+    Words: 50
+    Time Per Word: 0.07754714488983154
+    Current WPM : 824
+    Run # : 31
+    Elapsed: 3.874215602874756
+    Words: 50
+    Time Per Word: 0.07748431205749512
+    Current WPM : 853
+    Run # : 32
+    Elapsed: 3.891662120819092
+    Words: 50
+    Time Per Word: 0.07783324241638184
+    Current WPM : 827
+    Run # : 33
+    Elapsed: 3.909841299057007
+    Words: 50
+    Time Per Word: 0.07819682598114014
+    Current WPM : 817
+    Run # : 34
+    Elapsed: 3.8686981201171875
+    Words: 50
+    Time Per Word: 0.07737396240234375
+    Current WPM : 822
+    Run # : 35
+    Elapsed: 3.8719329833984375
+    Words: 50
+    Time Per Word: 0.07743865966796876
+    Current WPM : 806
+    Run # : 36
+    Elapsed: 3.871354579925537
+    Words: 50
+    Time Per Word: 0.07742709159851074
+    Current WPM : 863
+    Run # : 37
+    Elapsed: 3.874793291091919
+    Words: 50
+    Time Per Word: 0.07749586582183837
+    Current WPM : 850
+    Run # : 38
+    Elapsed: 3.8713490962982178
+    Words: 50
+    Time Per Word: 0.07742698192596435
+    Current WPM : 828
+    Run # : 39
+    Elapsed: 4.061985731124878
+    Words: 50
+    Time Per Word: 0.08123971462249756
+    Current WPM : 755
+    Run # : 40
+    Elapsed: 3.9638609886169434
+    Words: 50
+    Time Per Word: 0.07927721977233887
+    Current WPM : 861
+    Run # : 41
+    Elapsed: 3.953390598297119
+    Words: 50
+    Time Per Word: 0.07906781196594238
+    Current WPM : 804
+    Run # : 42
+    Elapsed: 3.867396116256714
+    Words: 50
+    Time Per Word: 0.07734792232513428
+    Current WPM : 860
+    Run # : 43
+    Elapsed: 3.8762435913085938
+    Words: 50
+    Time Per Word: 0.07752487182617188
+    Current WPM : 833
+    Run # : 44
+    Elapsed: 3.8891992568969727
+    Words: 50
+    Time Per Word: 0.07778398513793945
+    Current WPM : 784
+    Run # : 45
+    Elapsed: 3.8700501918792725
+    Words: 50
+    Time Per Word: 0.07740100383758546
+    Current WPM : 806
+    Run # : 46
+    Elapsed: 3.870758056640625
+    Words: 50
+    Time Per Word: 0.0774151611328125
+    Current WPM : 822
+    Run # : 47
+    Elapsed: 3.872964859008789
+    Words: 50
+    Time Per Word: 0.07745929718017579
+    Current WPM : 793
+    Run # : 48
+    Elapsed: 3.8591299057006836
+    Words: 50
+    Time Per Word: 0.07718259811401368
+    Current WPM : 799
+    Run # : 49
+    Elapsed: 3.875608205795288
+    Words: 50
+    Time Per Word: 0.07751216411590577
+    Current WPM : 805
+    Run # : 50
+    Elapsed: 3.8592689037323
+    Words: 50
+    Time Per Word: 0.077185378074646
+    Current WPM : 843
+    Run # : 51
+    Elapsed: 3.903754234313965
+    Words: 50
+    Time Per Word: 0.0780750846862793
+    Current WPM : 789
+    Run # : 52
+    Elapsed: 3.8755009174346924
+    Words: 50
+    Time Per Word: 0.07751001834869385
+    Current WPM : 802
+    Run # : 53
+    Elapsed: 3.874185085296631
+    Words: 50
+    Time Per Word: 0.07748370170593262
+    Current WPM : 831
+    Run # : 54
+    Elapsed: 3.8746423721313477
+    Words: 50
+    Time Per Word: 0.07749284744262695
+    Current WPM : 830
+    Run # : 55
+    Elapsed: 3.867697238922119
+    Words: 50
+    Time Per Word: 0.07735394477844239
+    Current WPM : 791
+    Run # : 56
+    Elapsed: 3.8697893619537354
+    Words: 50
+    Time Per Word: 0.07739578723907471
+    Current WPM : 813
+    Run # : 57
+    Elapsed: 3.870647668838501
+    Words: 50
+    Time Per Word: 0.07741295337677002
+    Current WPM : 816
+    Run # : 58
+    Elapsed: 3.871375799179077
+    Words: 50
+    Time Per Word: 0.07742751598358154
+    Current WPM : 831
+    Run # : 59
+    Elapsed: 3.8686716556549072
+    Words: 50
+    Time Per Word: 0.07737343311309815
+    Current WPM : 803
+    Run # : 60
+    Elapsed: 3.8689348697662354
+    Words: 50
+    Time Per Word: 0.07737869739532471
+    Current WPM : 870
+    Run # : 61
+    Elapsed: 3.885509490966797
+    Words: 50
+    Time Per Word: 0.07771018981933593
+    Current WPM : 788
+    Run # : 62
+    Elapsed: 3.8856852054595947
+    Words: 50
+    Time Per Word: 0.0777137041091919
+    Current WPM : 787
+    Run # : 63
+    Elapsed: 3.9026880264282227
+    Words: 50
+    Time Per Word: 0.07805376052856446
+    Current WPM : 774
+    Run # : 64
+    Elapsed: 3.8856852054595947
+    Words: 50
+    Time Per Word: 0.0777137041091919
+    Current WPM : 800
+    Run # : 65
+    

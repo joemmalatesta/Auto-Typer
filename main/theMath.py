@@ -10,7 +10,8 @@
 #Need to figure out how much time I need for each Character.
 #Time to type each character is about .0095 without any pause.
 
-#200 wpm is .3 seconds pause - .0095 is good .015 pause per letter too
+#200 wpm is .3 seconds pause 
+#Subtract the raw time it takes to enter the words from the wait time per word.
 
 
 
