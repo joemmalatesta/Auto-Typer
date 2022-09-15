@@ -64,24 +64,36 @@ def autoType(wordSleep = 0):
 
 
 
-#Calibrate
-rawTimePerWord = autoType()[1]
-redo.click()
+#Calibrate with no time
+timeTests = []
+timePerWord = 0
+while timesRan <= 10:
+    rawTimePerWord = autoType()[1]
+    timeTests.append(rawTimePerWord)
+    redo.click()
+    timesRan += 1
+
+#get the average time per word over 10 tests.
+for times in timeTests:
+    timePerWord += times
+    avgTimePerWord = timePerWord/10
+
+print(avgTimePerWord)
+
+
 # Inital Run
 wordSleep = theMath.calculateTime(expectedWPM)
-wordSleep -= rawTimePerWord
+wordSleep -= avgTimePerWord
 resultWPM = autoType(wordSleep)[0]
+print(resultWPM)
+
 
 #Run until you get it right
 while resultWPM != expectedWPM:
-    timesRan += 1
     redo.click()
-    if resultWPM > expectedWPM:
-        wordSleep *= 1.0001
-    elif resultWPM < expectedWPM:
-        wordSleep /= 1.0001
-    print(resultWPM, expectedWPM, wordSleep)
     resultWPM = autoType(wordSleep)[0]
+    print(f'This run: {resultWPM}, Expected : {expectedWPM}, Difference : {abs(expectedWPM - resultWPM)}, Current sleep time: {wordSleep}')
+    timesRan += 1
 
 time.sleep(5)
-print(f"holy hell, it worked. it took you {timesRan} runs to calibrate your stinky machine. The wait time between each word was {wordSleep}.")
+print(f"holy hell, it worked. it took you {timesRan - 11} runs to calibrate your stinky machine. The wait time between each word was {wordSleep}.")
