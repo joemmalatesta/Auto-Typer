@@ -8,9 +8,15 @@
 
 #Since adding time between each letter input, you can see that each character matters a lot towards the timing
 #Need to figure out how much time I need for each Character.
-#Time to type each character is about .031 with .005 margin of error.
+#Time to type each character is about .0095 without any pause.
+
+#200 wpm is .3 seconds pause - .0095 is good .015 pause per letter too
 
 
 
 def calculateTime(WPM):
-    return "hey "
+    wordsPerSecond = WPM / 60
+    wordWaitTime = 1 / wordsPerSecond
+    print(f"current wait time: {wordWaitTime}")
+    return wordWaitTime
+    #you can use (wordWaitTime / letterCount) - timePerCharacter

@@ -1,6 +1,7 @@
-import time
-import letterTimeMath
 
+import time
+from unittest import result
+import theMath
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -13,45 +14,33 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://typings.gg/")
 redo = driver.find_element(By.ID, "redo-button")
 inputField = driver.find_element(By.ID, "input-field")
+timesRan = 0
 
 
-def restart():
-    redo.click()
+def autoType(wordSleep = 0):
+    #Initalize test, specific properties.
     paragrpah = driver.find_element(By.ID, "text-display")
     words = (paragrpah.text.split())
-    return words
-
-def countCharacters():
-    words = restart()
-    totalCharacters = 0
-    for word in words:
-        for letter in word:
-            totalCharacters += 1
-        inputField.send_keys(" ")
-        totalCharacters += 1
-    return totalCharacters
 
 
-def autoType():
-    paragrpah = driver.find_element(By.ID, "text-display")
-    words = (paragrpah.text.split())
-    totalCharacters = countCharacters()
-    
-    letterTimeMath.calculateTime(totalCharacters)
+
+    #Begin bot, start timer
     start = time.time()
     for word in words:
-        for letter in word:
-            inputField.send_keys(letter)
-            time.sleep(letterSleep)
+        inputField.send_keys(word)
+        # for letter in word:
+        #     inputField.send_keys(letter)
+        #     time.sleep(.015 - letterSleep)
+        # time.sleep(wordSleep - (.015*len(word)))
         inputField.send_keys(" ")
+        time.sleep(wordSleep)
     end = time.time()
     #End bot, end timer.
 
 
     #Math for time per character and retreiving WPM.
     elapsed = end-start
-    totalCharacters -= 1 #Last space is not required.
-    timePerCharacter = elapsed/totalCharacters
+    timePerWord = elapsed/50
     rightWing = driver.find_element(By.ID, "right-wing")
     results = rightWing.text.split()
     resultWPM = results[1]
@@ -61,17 +50,38 @@ def autoType():
     #Add elapsed, total characters, and time per character
     writeToMethod = 'w'
     if timesRan != 0:
-        writeToMethod == 'a'
+        writeToMethod = 'a'
     with open('timesheet.txt', writeToMethod) as f:
         f.write(f'''Elapsed: {elapsed}
-    Total Characters: {totalCharacters}
-    Time Per Character: {timePerCharacter}
+    Words: 50
+    Time Per Word: {timePerWord}
     Current WPM : {resultWPM}
+    Run # : {timesRan}
     ''')
 
+
+    return int(resultWPM), timePerWord
+
+
+
+#Calibrate
+rawTimePerWord = autoType()[1]
+redo.click()
+# Inital Run
+wordSleep = theMath.calculateTime(expectedWPM)
+wordSleep -= rawTimePerWord
+resultWPM = autoType(wordSleep)[0]
+
+#Run until you get it right
+while resultWPM != expectedWPM:
     timesRan += 1
-    return int(resultWPM)
+    redo.click()
+    if resultWPM > expectedWPM:
+        wordSleep *= 1.0001
+    elif resultWPM < expectedWPM:
+        wordSleep /= 1.0001
+    print(resultWPM, expectedWPM, wordSleep)
+    resultWPM = autoType(wordSleep)[0]
 
-
-
-
+time.sleep(5)
+print(f"holy hell, it worked. it took you {timesRan} runs to calibrate your stinky machine. The wait time between each word was {wordSleep}.")
